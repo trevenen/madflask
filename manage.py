@@ -8,7 +8,7 @@ manager = Manager(app)
 
 @manager.command
 def run():
-    app.run()
+    app.run(port=int("80"))
 
 # @manager.command
 # def test():
