@@ -31,7 +31,7 @@ def create_app(config_name):
     # Allow extentions 
     ALLOWED_EXTENSIONS = {'json'}
     #import blueprint
-    from .views.views import view_blueprint
+    from app.views.views import view_blueprint
     app.register_blueprint(view_blueprint)
 
     return app
