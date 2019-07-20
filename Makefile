@@ -4,9 +4,6 @@ clean:
 	find . -type f -name '*.pyc' -delete
 	find . -type f -name '*.log' -delete
 
-system-packages:
-	sudo apt install python-pip -y
-
 python-packages:
 	pip install -r requirements.txt
 
