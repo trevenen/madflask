@@ -1,0 +1,27 @@
+{% import "bootstrap/utils.html" as utils %}
+ {% extends "base.html" %} {% block
+  title %}Data Upload{% endblock %} {% block body %}
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <meta charset="UTF-8" />
+    <title>My Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>PIE CHART</h1>
+            <div id="pie" d3pie="0.2.1">
+                <script>
+                  var data = {{ graph_value|safe }};
+                  Plotly.newPlot('pie', data);
+                </script>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock %}
