@@ -4,7 +4,7 @@ import pandas as pd
 from app import db
 import plotly.graph_objects as go 
 from app.utils.json_paser import Parser
-from app.views.datachart import create_graph
+from app.views.datachart import create_graph,create_dummy_graph, convert_json_dataframe
 from flask import Flask, render_template, send_file, request, redirect, url_for, flash, Blueprint, current_app as app
 from flask_login import login_required, login_user, logout_user
 from werkzeug.utils import secure_filename
@@ -100,29 +100,20 @@ def upload_file():
             print('No file attached in request')
             return redirect(request.url)
         filename = secure_filename(file.filename)
-        # key_data = request.get['json_key']
-        # key_data = key_data.split()
         if allowed_file(filename):
             file.save(os.path.join(app.config['UPLOADED_DATAFILES_DEST'], filename))
-            f_type = file_type(filename)
-            if f_type == 'json':
-                try:
-                    f = open(file, 'r')
-                    json_obj = json.load(f)
-                    res = Parser.parse_data(json_obj, key_data)
-                    result.append(res)
-                    f.close()
-                except IOError:
-                    print ('parameters error')
-            elif f_type == 'csv':
-                result = pd.read_csv(file)
-                print(result)
-            JsonData = json.dumps(result, cls=plotly.utils.PlotlyJSONEncoder)
-            return JsonData
+            data = convert_json_dataframe(filename)
+            return render_template('data.html', data = data.to_html(), title='data')
+            #data.to_html()
     return render_template('upload_file.html', form=form, title='upload_file')
 
-@view_blueprint.route('/dashboard')
+# @view_blueprint.route('/')
+# def index():
+#     data = convert_json_dataframe()
+
+
+@view_blueprint.route('/dashboard',methods=['POST','GET'])
 def dashboard():
-    pie = create_graph()
+    pie = create_dummy_graph()
     return render_template('dashboard.html', graph_value=pie)
     

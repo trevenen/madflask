@@ -1,5 +1,5 @@
 {% import "bootstrap/utils.html" as utils %}{% import "bootstrap/wtf.html" as
-wtf %} {% extends "base.html" %} {% block title %}My Dashboard{% endblock %} {%
+wtf %} {% extends "base.html" %} {% block title %}My Data Lists{% endblock %} {%
 block body %}
 <!DOCTYPE html>
 <html>
@@ -8,19 +8,16 @@ block body %}
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <meta charset="UTF-8" />
   </head>
-  <body class="container center">
-    <br />
-    <br />
+  <body>
+    <br>
+    <br><br>
+    <BR>
+    <H1 class="container center">DATA FROM JSON FILE</H1>
     <div class="container">
-      <div class="col-md-6 center">
-        <h1>PIE CHART</h1>
-        <div id="pie" d3pie="0.2.1">
-          <script>
-            var data = {{ graph_value|safe }};
-            Plotly.newPlot('pie', data);
-          </script>
+      <div class="row">
+        <div class="col-md-6 center" >
+            {{data | safe}}
         </div>
-      </div>
     </div>
   </body>
 </html>

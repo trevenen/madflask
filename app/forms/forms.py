@@ -1,6 +1,8 @@
+import os
+from flask import current_app as app
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileRequired
-from wtforms import PasswordField, StringField, SubmitField, ValidationError
+from wtforms import PasswordField, StringField, SubmitField, ValidationError, SelectField
 from wtforms.validators import DataRequired, Email, EqualTo
 
 from app.models.models import User
@@ -41,3 +43,17 @@ class UploadForm(FlaskForm):
     """
     file = FileField('File', validators=[FileRequired()])
     submit = SubmitField('Upload')
+
+""" class DataForm(FlaskForm):
+    
+    data =[]
+    entries= os.listdir('app/static/uploads')
+    i = 1
+    for entry in entries:
+        data.append([i, entry])
+        i =i+1
+    print(data)
+    filename= SelectField('File name',choices = data, id='select_table', validators = [DataRequired()])
+    #keydata = StringField('Key data', validators = [DataRequired()])
+   # graph_type = StringField('Graph type', validators = [DataRequired()])
+    submit = SubmitField('Submit') """
