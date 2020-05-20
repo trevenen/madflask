@@ -1,0 +1,20 @@
+,Top Level View,Top Name,Second Level,Second Level Names,,,,,,,,,,,,,,,,,,,
+,World Setup,,,,,Example Data for one ,,,,,,,,,,,,,,,,,
+,,terra,contenents,North America,,North America,ASHandle,Location,DC Man Link,Hostname,Date,Date,Date,Date,OS Type,OS Family,PublicIP,PrivateIP,Compliant,Patch Status,PCI,Fix,Link CVE's
+,,,,South America,,,AS29873,Houston,http://eig.com/link1,katello.eig.com,Date(last_year),Date(last_month),Date(last_week),Date(now),Linux,CentOs,205.162.136.10,10.0.0.5,Y,78%,N,Button ,Link
+,,,,Europe,,,AS29873,Dallas,http://eig.com/link2,bind.eig.com,Date(last_year),Date(last_month),Date(last_week),Date(now),Linux,RedHat,205.162.137.22,10.0.0.15,N,40%,N,Button ,Link
+,,,,Asia,,,AS29873,Provo,http://eig.com/link5,host1.eig.com,Date(last_year),Date(last_month),Date(last_week),Date(now),Linux,CentOs,205.161.123.142,10.0.0.25,Y,95%,N,Button ,Link
+,,,,Austrailia,,,AS29873,Boston,http://eig.com/link7,host2.eig.com,Date(last_year),Date(last_month),Date(last_week),Date(now),Linux,Windows,205.162.137.205,10.0.0.205,N,78%,N,Button ,Link
+,,,,Africa,,,AS29874,Houston,http://springmicro.com/asdf,katello.spm.com,Date(last_year),Date(last_month),Date(last_week),Date(now),Linux,CentOs,205.162.136.111,10.0.1.5,Y,88%,N,Button ,Link
+,,,,Antartica,,,AS29874,Dallas,http://springmicro.com/asdf,bind.spm.com,Date(last_year),Date(last_month),Date(last_week),Date(now),Linux,RedHat,205.162.137.222,10.0.1.15,N,78%,N,Button ,Link
+,,,,,,,AS29874,Provo,http://springmicro.com/asdf,host11.spm.com,Date(last_year),Date(last_month),Date(last_week),Date(now),Linux,CentOs,205.161.123.145,10.0.1.25,Y,90%,Y,Button ,Link
+,,subterra,Oceans,Pacific,,,AS29874,Boston,http://springmicro.com/asdf,host33.springmicro.com,Date(last_year),Date(last_month),Date(last_week),Date(now),Linux,Windows,205.162.137.215,10.0.1.205,N,95%,N,Button ,Link
+,,,,Atlantic,,,0,0,0,0,0,0,0,0,0,0,0,10.0.1.15,N,55%,Y,,
+,,,,Indian,,,,,,,,,,,,,,,,,,,
+,,,,Artic,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,hyperterra,?,,,,For each hostname show on chart if it is compliant over time,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,gv,?,,,,,,,,,,,,,,,,,,,,

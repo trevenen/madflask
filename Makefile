@@ -9,9 +9,6 @@ python-packages:
 
 install: system-packages python-packages
 
-tests:
-	python manage.py test
-
 run:
 	python manage.py run
 

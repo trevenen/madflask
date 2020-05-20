@@ -1,9 +1,13 @@
+import os
 import plotly
+import json
+import pandas as pd
+from pandas.io.json import json_normalize
 import plotly.graph_objects as go 
 from flask import Flask, render_template
-import json
 
-def create_graph():
+
+def create_dummy_graph():
     data=[go.Pie(
         values=[50, 10, 10, 10, 10, 10],
         labels=["Log Level", "Debug", "Info", "Warn", "Error", "Fatal"],
@@ -68,8 +72,50 @@ def create_graph():
         )
     ]
     )
-
-
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     return graphJSON
+
+def convert_json_dataframe(filename):
+    file = ('app/static/uploads/'+str(filename))
+
+    if not os.path.isfile(file):
+        return False
+    else:
+        try:
+            if os.path.exists(file):
+                f = open(file,'r')
+                data = json.load(f)
+                df = json_normalize(data)
+                f.close()
+                return df
+            else:
+                return False
+        except IOError:
+            return False
+
+
+def create_graph(filenam, key_data, graph_type):
+    result = []
+    ls= ('app/static/uploads'+str(filenam))
+    key_data = key_data.split(',')
+    if not os.path.isfile(filepath):
+        return False
+    else:
+        for i in range(0,len(key_data)):
+            key = key_data[i]
+        print(key)
+        try:
+            if os.path.exists(file):
+                f = open(file,'r')
+                json_obj = json.load(f)
+                res = Parser.parse_data(json_obj, key)
+                result.append(res)
+                print(res)
+                f.close()
+            else:
+                print('files does not exist')
+        except IOError:
+            print ('parameters error')
+    return True
+

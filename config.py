@@ -5,17 +5,17 @@ import os
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY', 'Sm9obiBTY2hyb20ga2lja3MgYXNz')
-    DEBUG = False
+    SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(os.path.join(basedir, "database.db"))
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    DEBUG = True
 
 
 class DevelopmentConfig(Config):
     # uncomment the line below to use postgres
     # SQLALCHEMY_DATABASE_URI = postgres_local_base
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = "postgresql://user:test@localhost/databasename"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
@@ -30,8 +30,7 @@ class TestingConfig(Config):
 class ProductionConfig(Config):
     DEBUG = False
     # uncomment the line below to use postgres
-    SQLALCHEMY_DATABASE_URI = SQLALCHEMY_DATABASE_URI = "postgresql://user:test@localhost/databasename"
-
+    SQLALCHEMY_DATABASE_URI = "postgresql://user:test@localhost/databasename"
 
 config_by_name = dict(
     dev=DevelopmentConfig,

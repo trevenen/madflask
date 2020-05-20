@@ -4,3 +4,11 @@ flask_uploads
 flask_sqlalchemy
 flask_bcrypt
 flask_script
+pandas
+flask_wtf
+wtforms
+flask-login
+flask-migrate
+Flask-WTF
+flask-bootstrap
+psycopg2

@@ -1,0 +1,288 @@
+[
+{
+"North America": 1,
+"ASHandle": "AS29873",
+"Location": "Houston",
+"AWS": {
+"GKE": {
+"DC Man Link": "http://eig.com/link1"
+}
+},
+"Hostname": "katello.eig.com",
+"Instance ID": "",
+"Nick Group": "",
+"Date": "Date(now)",
+"OS Type": "Linux",
+"OS Family": "CentOs",
+"AMI Link": "",
+"PublicIP": "205.162.136.10",
+"Ping": "y",
+"PrivateIP": "10.0.0.5",
+"Compliant": "Y",
+"Patch Status": "78%",
+"PCI": "N",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 1
+},
+{
+"North America": 1,
+"ASHandle": "AS29873",
+"Location": "Dallas",
+"AWS": {
+"GKE": {
+"DC Man Link": "http://eig.com/link2"
+}
+},
+"Hostname": "bind.eig.com",
+"Instance ID": "",
+"Nick Group": "",
+"Date": "Date(now)",
+"OS Type": "Linux",
+"OS Family": "RedHat",
+"AMI Link": "",
+"PublicIP": "205.162.137.22",
+"Ping": "y",
+"PrivateIP": "10.0.0.15",
+"Compliant": "N",
+"Patch Status": "40%",
+"PCI": "N",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 2
+},
+{
+"North America": 1,
+"ASHandle": "AS29873",
+"Location": "Provo",
+"AWS": {
+"GKE": {
+"DC Man Link": "http://eig.com/link5"
+}
+},
+"Hostname": "host1.eig.com",
+"Instance ID": "",
+"Nick Group": "",
+"Date": "Date(now)",
+"OS Type": "Linux",
+"OS Family": "CentOs",
+"AMI Link": "",
+"PublicIP": "205.161.123.142",
+"Ping": "y",
+"PrivateIP": "10.0.0.25",
+"Compliant": "Y",
+"Patch Status": "95%",
+"PCI": "N",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 3
+},
+{
+"North America": 1,
+"ASHandle": "AS29873",
+"Location": "Boston",
+"AWS": {
+"GKE": {
+"DC Man Link": "http://eig.com/link7"
+}
+},
+"Hostname": "host2.eig.com",
+"Instance ID": "",
+"Nick Group": "",
+"Date": "Date(now)",
+"OS Type": "Linux",
+"OS Family": "Windows",
+"AMI Link": "",
+"PublicIP": "205.162.137.205",
+"Ping": "y",
+"PrivateIP": "10.0.0.205",
+"Compliant": "N",
+"Patch Status": "78%",
+"PCI": "N",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 4
+},
+{
+"North America": 1,
+"ASHandle": "AS29874",
+"Location": "Houston",
+"AWS": {
+"GKE": {
+"DC Man Link": "http://springmicro.com/asdf"
+}
+},
+"Hostname": "katello.spm.com",
+"Instance ID": "",
+"Nick Group": "",
+"Date": "Date(now)",
+"OS Type": "Linux",
+"OS Family": "CentOs",
+"AMI Link": "",
+"PublicIP": "205.162.136.111",
+"Ping": "y",
+"PrivateIP": "10.0.1.5",
+"Compliant": "Y",
+"Patch Status": "88%",
+"PCI": "N",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 5
+},
+{
+"North America": 1,
+"ASHandle": "AS29874",
+"Location": "Dallas",
+"AWS": {
+"GKE": {
+"DC Man Link": "http://springmicro.com/asdf"
+}
+},
+"Hostname": "bind.spm.com",
+"Instance ID": "",
+"Nick Group": "",
+"Date": "Date(now)",
+"OS Type": "Linux",
+"OS Family": "RedHat",
+"AMI Link": "",
+"PublicIP": "205.162.137.222",
+"Ping": "y",
+"PrivateIP": "10.0.1.15",
+"Compliant": "N",
+"Patch Status": "78%",
+"PCI": "N",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 6
+},
+{
+"North America": 1,
+"ASHandle": "AS29874",
+"Location": "Provo",
+"AWS": {
+"GKE": {
+"DC Man Link": "http://springmicro.com/asdf"
+}
+},
+"Hostname": "host11.spm.com",
+"Instance ID": "",
+"Nick Group": "",
+"Date": "Date(now)",
+"OS Type": "Linux",
+"OS Family": "CentOs",
+"AMI Link": "",
+"PublicIP": "205.161.123.145",
+"Ping": "y",
+"PrivateIP": "10.0.1.25",
+"Compliant": "Y",
+"Patch Status": "90%",
+"PCI": "Y",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 7
+},
+{
+"North America": 1,
+"ASHandle": "AS29874",
+"Location": "Boston",
+"AWS": {
+"GKE": {
+"DC Man Link": "http://springmicro.com/asdf"
+}
+},
+"Hostname": "host33.springmicro.com",
+"Instance ID": "",
+"Nick Group": "",
+"Date": "Date(now)",
+"OS Type": "Windows",
+"OS Family": "Windows",
+"AMI Link": "",
+"PublicIP": "205.162.137.215",
+"Ping": "y",
+"PrivateIP": "10.0.1.205",
+"Compliant": "N",
+"Patch Status": "95%",
+"PCI": "N",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 8
+},
+{
+"North America": 1,
+"ASHandle": "0",
+"Location": "0",
+"AWS": {
+"GKE": {
+"DC Man Link": "0"
+}
+},
+"Hostname": "0",
+"Instance ID": "",
+"Nick Group": "",
+"Date": "0",
+"OS Type": "0",
+"OS Family": "0",
+"AMI Link": "",
+"PublicIP": "0",
+"Ping": "y",
+"PrivateIP": "10.0.1.15",
+"Compliant": "N",
+"Patch Status": "55%",
+"PCI": "Y",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 9
+},
+{
+"North America": 1,
+"ASHandle": "AS29872",
+"Location": "Provo",
+"AWS": {
+"GKE": {
+"DC Man Link": "0"
+}
+},
+"Hostname": "gym.boree.us",
+"Instance ID": "i-asdfe3543j324j2323j4234",
+"Nick Group": "",
+"Date": "Date(now)",
+"OS Type": "Windows",
+"OS Family": "Windows",
+"AMI Link": "",
+"PublicIP": "205.162.136.113",
+"Ping": "y",
+"PrivateIP": "10.0.1.15",
+"Compliant": "Y",
+"Patch Status": "95%",
+"PCI": "N",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 10
+},
+{
+"North America": 1,
+"ASHandle": "0",
+"Location": "NGV",
+"AWS": {
+"GKE": {
+"DC Man Link": "NGV"
+}
+},
+"Hostname": "facts.red.gov",
+"Instance ID": "i-asdfe3543j324j232332345",
+"Nick Group": "",
+"Date": "0",
+"OS Type": "AWS",
+"OS Family": "AMI:AWS",
+"AMI Link": "",
+"PublicIP": "205.162.137.220",
+"Ping": "y",
+"PrivateIP": "10.0.1.15",
+"Compliant": "N",
+"Patch Status": "78%",
+"PCI": "Y",
+"Fix": "Button ",
+"Link CVE's": "Link",
+"Hightest CVE Level": 0
+}
+]
